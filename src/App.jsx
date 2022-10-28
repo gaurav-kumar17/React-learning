@@ -1,17 +1,17 @@
 import './App.css';
-import Myheading, { Myheading3, Myheading4 } from './Components/MyHeading';
-import {Myheading2 as Meranaam} from './Components/MyHeading';
+import Aisehi, {Myheading2 as Meranaam, Myheading3, Myheading4 } from './Components/MyHeading';
+// import {} from './Components/MyHeading';
 
 const App=()=> {
   return (
     <>
-      
-      <h2>Welcome Page 1</h2>
-      <p>Hello ji</p>
+    
 
-      <Myheading/>
+      <Aisehi name="Gaurav Kumar" text="Nice one!"/>
       <Meranaam/>
-      <Myheading3/>
+      <Myheading3
+        name="My name is Gaurav kumar."
+      />
       <Myheading4/>
     </>
   );
