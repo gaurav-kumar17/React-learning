@@ -1,8 +1,13 @@
 import React from 'react'
-
+import "../Styles/Header.css"
 const Header = () => {
   return (
-    <div>Header</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    
+    </nav>
   )
 }
 
