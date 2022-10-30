@@ -23,7 +23,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/product/id" element={<Product/>} />
+
+          {/* product/:id means product/ ke baad kuch bhi likhne ko id mana jayega */}
+          <Route path="/product/:id" element={<Product/>} />
           <Route path="*" element={<div >Page Not found 404</div>} />
         </Routes>
       </BrowserRouter>
