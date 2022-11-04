@@ -24,9 +24,13 @@ const App = () => {
           <Route path="/About" element={<About />} />
           <Route path="/contact" element={<Contact />} />
 
-          {/* product/:id means product/ ke baad kuch bhi likhne ko id mana jayega */}
+          {/* product/:id means product/ ke baad kuch bhi likhne ko id mana jayega (yeh Dynamic URL hai) */}
           <Route path="/product/:id" element={<Product/>} />
-          <Route path="*" element={<div >Page Not found 404</div>} />
+
+
+          {/* Below * means / ke baad kuch bhi type karenge to "page not found " show karega */}
+          
+          {/* <Route path="*" element={<div>Page Not found 404</div>} /> */}
         </Routes>
       </BrowserRouter>
 
